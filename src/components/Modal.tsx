@@ -13,19 +13,19 @@ export default function Modal({ visible, setVisible }: ModalProps) {
 
   const [currentImageIdx, setcurrentImageIdx] = useState(-1)
   const isMobile = MediaQuery({max_width: 800})
-  const thumbnails = ["/ecommercewebapp/public/images/image-product-1-thumbnail.jpg", 
-                      "/ecommercewebapp/public/images/image-product-2-thumbnail.jpg",
-                      "/ecommercewebapp/public/images/image-product-3-thumbnail.jpg",
-                      "/ecommercewebapp/public/images/image-product-4-thumbnail.jpg"
+  const thumbnails = ["/ecommercewebapp/images/image-product-1-thumbnail.jpg", 
+                      "/ecommercewebapp/images/image-product-2-thumbnail.jpg",
+                      "/ecommercewebapp/images/image-product-3-thumbnail.jpg",
+                      "/ecommercewebapp/images/image-product-4-thumbnail.jpg"
                     ]
-  const images = ["/ecommercewebapp/public/images/image-product-1.jpg", 
-                  "/ecommercewebapp/public/images/image-product-2.jpg",
-                  "/ecommercewebapp/public/images/image-product-3.jpg",
-                  "/ecommercewebapp/public/images/image-product-4.jpg"
+  const images = ["/ecommercewebapp/images/image-product-1.jpg", 
+                  "/ecommercewebapp/images/image-product-2.jpg",
+                  "/ecommercewebapp/images/image-product-3.jpg",
+                  "/ecommercewebapp/images/image-product-4.jpg"
                 ]
-  const [selectedThumbnail, setselectedThumbnail] = useState('/ecommercewebapp/public/images/image-product-1-thumbnail.jpg')
+  const [selectedThumbnail, setselectedThumbnail] = useState('/ecommercewebapp/images/image-product-1-thumbnail.jpg')
   
-  const [displayimg, setdisplayimg] = useState("/ecommercewebapp/public/images/image-product-1.jpg")
+  const [displayimg, setdisplayimg] = useState("/ecommercewebapp/images/image-product-1.jpg")
   const handleThumbnailClick = (key: number) => {
     setselectedThumbnail(thumbnails[key])
     // console.log(selectedThumbnail)
@@ -91,7 +91,7 @@ export default function Modal({ visible, setVisible }: ModalProps) {
                 <div className="imagethumbnailcontainer">
                 {isMobile&&thumbnails.map((item, key) => 
                 <div className={item===selectedThumbnail?'borderthumbnailselected':'borderthumbnailunselected'}>
-                    <img src={item} className={item===selectedThumbnail?'thumbnailselected':'thumbnailunselected'} onClick={()=>{handleThumbnailClick(key)}}></img>
+                    <img alt="thumbnail images" src={item} className={item===selectedThumbnail?'thumbnailselected':'thumbnailunselected'} onClick={()=>{handleThumbnailClick(key)}}></img>
                 </div>)}
                 </div>
       </div>

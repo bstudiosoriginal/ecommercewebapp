@@ -31,18 +31,18 @@ function InfoPanel() {
         </p>
         <div className="quantityandcart">
           <div className="changequantity">
-            <img className='increasequantity' src={minusicon} onClick={decreaseQuantity}>
+            <img className='increasequantity' alt="increase quantity" src={minusicon} onClick={decreaseQuantity}>
 
             </img>
             <p className='quantitydisplay'>
               {quantity.toString()}
             </p>
-            <img className='increasequantity' src={plusicon} onClick={increaseQuantity}>
+            <img className='increasequantity' alt="decrease quantity" src={plusicon} onClick={increaseQuantity}>
 
             </img>
           </div>
           <button className="addtocart">
-            <img src={carticon}></img>
+            <img alt="Add to cart" src={carticon}></img>
             Add to cart
 
           </button>

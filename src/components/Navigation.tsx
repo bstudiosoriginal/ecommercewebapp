@@ -66,7 +66,7 @@ const Navigation = ({cartOpen, openCart}: NavigationProps) => {
           <p>3</p>
         </div>
         <div className="userimgcontainer">
-          <img src="/ecommercewebapp/public/images/image-avatar.png" alt="userprofileimg"></img>
+          <img src="/ecommercewebapp/images/image-avatar.png" alt="userprofileimg"></img>
         </div>
       </div>
     </div>
