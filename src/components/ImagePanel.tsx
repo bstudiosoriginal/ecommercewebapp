@@ -10,19 +10,19 @@ interface ImagePanelProps {
 function ImagePanel({openModal}: ImagePanelProps) {
   const [currentImageIdx, setcurrentImageIdx] = useState(-1)
   const isMobile = MediaQuery({max_width: 800})
-  const thumbnails = ["/ecommercewebapp/images/image-product-1-thumbnail.jpg", 
-                      "/ecommercewebapp/images/image-product-2-thumbnail.jpg",
-                      "/ecommercewebapp/images/image-product-3-thumbnail.jpg",
-                      "/ecommercewebapp/images/image-product-4-thumbnail.jpg"
+  const thumbnails = ["/ecommercewebapp/image-product-1-thumbnail.jpg", 
+                      "/ecommercewebapp/image-product-2-thumbnail.jpg",
+                      "/ecommercewebapp/image-product-3-thumbnail.jpg",
+                      "/ecommercewebapp/image-product-4-thumbnail.jpg"
                     ]
-  const images = ["/ecommercewebapp/images/image-product-1.jpg", 
-                  "/ecommercewebapp/images/image-product-2.jpg",
-                  "/ecommercewebapp/images/image-product-3.jpg",
-                  "/ecommercewebapp/images/image-product-4.jpg"
+  const images = ["/ecommercewebapp/image-product-1.jpg", 
+                  "/ecommercewebapp/image-product-2.jpg",
+                  "/ecommercewebapp/image-product-3.jpg",
+                  "/ecommercewebapp/image-product-4.jpg"
                 ]
-  const [selectedThumbnail, setselectedThumbnail] = useState('/ecommercewebapp/images/image-product-1-thumbnail.jpg')
+  const [selectedThumbnail, setselectedThumbnail] = useState('/ecommercewebapp/image-product-1-thumbnail.jpg')
   
-  const [displayimg, setdisplayimg] = useState("/ecommercewebapp/images/image-product-1.jpg")
+  const [displayimg, setdisplayimg] = useState("/ecommercewebapp/image-product-1.jpg")
   const handleThumbnailClick = (key: number) => {
     setselectedThumbnail(thumbnails[key])
     // console.log(selectedThumbnail)

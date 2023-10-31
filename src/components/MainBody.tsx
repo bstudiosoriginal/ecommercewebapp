@@ -15,7 +15,7 @@ const MainBody = ({opencart, openModal}: MainBodyProps) => {
     company: "SNEAKER COMPANY",
     price: 125.00,
     quantity: 3,
-    image: '/ecommercewebapp/images/image-product-1-thumbnail.jpg'
+    image: '/ecommercewebapp/image-product-1-thumbnail.jpg'
   }
   const [cartItems, _] = useState([details])
   

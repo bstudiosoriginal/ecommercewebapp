@@ -18,7 +18,7 @@ function Cart({cartItems}: CartProps) {
     if (cartItems.length > 0){
         return cartItems.map( (item)=>
             <div className="cartItem">
-                <img className="cartItemImage" src="/ecommercewebapp/images/image-product-1-thumbnail.jpg" alt="product image">
+                <img className="cartItemImage" src="/ecommercewebapp/image-product-1-thumbnail.jpg" alt="product image">
                     {/* <span>3</span> */}
                 </img>
                 <div className="cartItemInfoContainer">
