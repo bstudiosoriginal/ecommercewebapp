@@ -11,7 +11,7 @@ interface NavigationProps {
 const Navigation = ({cartOpen, openCart}: NavigationProps) => {
   const [selected, setSelected] = useState("");
   const navitems = ["Collections", "Men", "Women", "About", "Contact"];
-  const isMobile = MediaQuery({max_width: 800})
+  const isMobile = MediaQuery({max_width: 530})
 
   const renderNavLinks = (state: boolean) => {
     if (state) {

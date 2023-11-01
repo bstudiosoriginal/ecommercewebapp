@@ -6,7 +6,7 @@ import Modal from "./components/Modal";
 
 function App() {
   const [opencart, setOpenCart] = useState(false)
-  const [modalVisible, setModalVisible] = useState(true)
+  const [modalVisible, setModalVisible] = useState(false)
   return (
     <>
       <Modal visible={modalVisible} setVisible={setModalVisible}/>

@@ -356,6 +356,7 @@ image section
   width: 90%;
   /* border: 2px solid black; */
   /* margin-bottom: 18px; */
+  
   display: flex;
   flex-direction: column;
   border-radius: 13px;
@@ -377,6 +378,11 @@ image section
   align-items: center;
   margin-left: 20px;
   margin-right: 20px;
+  
+}
+
+.cartitembounds {
+  overflow: scroll;
 }
 
 .cartItemImage {
@@ -431,8 +437,12 @@ image section
   background-color: white;
   border-radius: 20px;
   display: none;
+  cursor: pointer;
 }
 
+.prevbutton:hover {
+  filter: invert(58%) sepia(79%) saturate(2434%) hue-rotate(345deg) brightness(100%) contrast(105%); 
+}
 .nextbutton {
   position: absolute;
   top: 180px;
@@ -443,8 +453,12 @@ image section
   background-color: white;
   border-radius: 20px;
   display: none;
+  cursor: pointer;
 }
 
+.nextbutton:hover{
+  filter: invert(58%) sepia(79%) saturate(2434%) hue-rotate(345deg) brightness(100%) contrast(105%); 
+}
 .cartbutton:hover {
   opacity: 40%;
   border: 0;
@@ -463,20 +477,25 @@ image section
   height: 150px;
   display: flex;
   flex-direction: column;
-
+  
 }
 
 .modalcontent {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  position: sticky;
-  top: 0;
+  
+  position: fixed;
+  top: 15%;
+}
+
+.quantitydisplay {
+  color: hsl(220, 13%, 13%);
 }
 
 .closemodalicon {
   width: 20px;
-  margin-left: 95%;
+  margin-left: 90%;
   -webkit-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
   -o-transition-duration: 0.8s;
@@ -490,6 +509,13 @@ image section
     overflow:hidden;
 }
 
+.mainpricepanel {
+  display: flex;
+  flex: 1;
+  flex-direction: column; 
+  justify-content: space-between;
+  
+}
 .closemodalicon:hover {
   filter: invert(58%) sepia(79%) saturate(2434%) hue-rotate(345deg) brightness(100%) contrast(105%); 
   -webkit-transform:rotate(180deg);
@@ -497,10 +523,15 @@ image section
   -o-transform:rotate(180deg);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 530px) {
   .mainbody {
     flex-direction: column;
     gap: 0px;
+  }
+
+  .mainpricepanel{
+    flex-direction: row;
+    margin-bottom: 15px;
   }
 
   .mainimg {

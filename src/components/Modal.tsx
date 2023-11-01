@@ -12,7 +12,7 @@ export default function Modal({ visible, setVisible }: ModalProps) {
   const modalRef = useRef(null);
 
   const [currentImageIdx, setcurrentImageIdx] = useState(-1)
-  const isMobile = MediaQuery({max_width: 800})
+  const isMobile = MediaQuery({max_width: 530})
   const thumbnails = ["/ecommercewebapp/image-product-1-thumbnail.jpg", 
                       "/ecommercewebapp/image-product-2-thumbnail.jpg",
                       "/ecommercewebapp/image-product-3-thumbnail.jpg",
@@ -59,6 +59,7 @@ export default function Modal({ visible, setVisible }: ModalProps) {
             flexDirection: "row",
             top: 0,
             left: 0,
+            
             width: "100vw",
             height: "100vh",
             zIndex: "100",

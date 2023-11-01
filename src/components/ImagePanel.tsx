@@ -9,7 +9,7 @@ interface ImagePanelProps {
 }
 function ImagePanel({openModal}: ImagePanelProps) {
   const [currentImageIdx, setcurrentImageIdx] = useState(-1)
-  const isMobile = MediaQuery({max_width: 800})
+  const isMobile = MediaQuery({max_width: 530})
   const thumbnails = ["/ecommercewebapp/image-product-1-thumbnail.jpg", 
                       "/ecommercewebapp/image-product-2-thumbnail.jpg",
                       "/ecommercewebapp/image-product-3-thumbnail.jpg",
